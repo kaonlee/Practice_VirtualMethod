@@ -1,5 +1,5 @@
 # Practice_VirtualMethod
-資策會全端班練習作業
+全端班練習作業 [[主程式]](https://github.com/kaonlee/Practice_VirtualMethod/blob/master/Practice_VirtualMethod/Program.cs)
 
 ## 作業需求說明
 預設 class Person / class Employee:Person
