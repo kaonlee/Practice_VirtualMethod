@@ -24,7 +24,7 @@ namespace Practice_VirtualMethod
 			{
 				Name = "波加曼",
 				BadegeID = "M001",
-				Subordinates = new Employee[] { memberA, memberB },
+				Subordinates = new List<Employee> { memberA, memberB },
 				RegularPay = 100000
 			};
 
@@ -63,13 +63,13 @@ namespace Practice_VirtualMethod
         public int BonusPay { get; set; }
 		public override int CalcTotalPay() => base.CalcTotalPay() + this.BonusPay;
 	}
-	public class Management:Employee
+	public class Management : Employee
 	{
-        public Employee[]? Subordinates { get; set; }
+		public List<Employee> Subordinates { get; set; }
         public int LeaderBonus 
 		{ get
 			{
-				return Subordinates.Length*100000;
+				return Subordinates.Count*100000;
 			}
 		}
 		public override int CalcTotalPay() => base.CalcTotalPay()+this.LeaderBonus;
