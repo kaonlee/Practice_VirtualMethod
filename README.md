@@ -22,6 +22,7 @@
 - 繼承 Employee 型別的三種子型別 class Engineer, Sales. Managemet 中設計 `public override int CalcTotalPay()`
 - 以上的設計，始我們將不同 position 的 Employee 加到 `List<Employee>` 並列出各自薪資時，並不會因存入 List<Employee> 後型別為 Employee 而使 CalcTotalPay() 的計算結果失真
 
-## 其他
-- 本專案目前僅手動測試。
-- 練習 Unit testing (單元測試) 視為本方案後續要練習的課題。
+## 更新
+2023-04-17
+- class Manager 中屬性 Subordinates 宣告類型修正為具延展性的 List<Employee>
+- 新增 [NUnit單元測試](https://github.com/kaonlee/Practice_VirtualMethod/blob/master/TestProject1/UnitTest1.cs)
